@@ -15,6 +15,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-from django.shortcuts import render
+from rest_framework import viewsets
+from senales.models import Senal
+from senales.serializers import SenalSerializer
 
-# Create your views here.
+class SenalViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Senal.objects.all().order_by('-fecha_generacion')
+    serializer_class = SenalSerializer

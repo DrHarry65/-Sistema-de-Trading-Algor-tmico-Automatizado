@@ -36,13 +36,19 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from estrategias.views import EstrategiaViewSet
+from senales.views import SenalViewSet
 
 router = DefaultRouter()
 router.register(r'estrategias', EstrategiaViewSet, basename='estrategia')
+
+# Crea un router y registra el ViewSet
+router = DefaultRouter()
+router.register(r'senales', SenalViewSet, basename='senal')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api/estrategias/<uuid:pk>/activate/', EstrategiaViewSet.as_view({'post': 'activate'})),
     path('api/estrategias/<uuid:pk>/deactivate/', EstrategiaViewSet.as_view({'post': 'deactivate'})),
+    path('api/', include(router.urls)),
 ]
