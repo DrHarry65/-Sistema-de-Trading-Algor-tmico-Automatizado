@@ -23,6 +23,36 @@ Sistema completo de trading algorítmico con backend Django y frontend React.
 - Docker 20+
 - Docker Compose 2+
 
+- ---
+
+## 🛡️ Licencia
+
+Este proyecto está licenciado bajo los términos de la [GNU General Public License v3.0](LICENSE).
+
+© 2025 Alejandro Rodriguez  
+Este software es libre: puedes usarlo, estudiarlo, modificarlo y distribuirlo bajo los términos de la GPLv3.  
+Se requiere conservar este aviso y atribuir la autoría al autor original.
+
+---
+
+## 💸 Apoya el desarrollo
+
+¿Este sistema de trading algorítmico te ha sido útil?  
+Puedes apoyar mi trabajo con una donación voluntaria. ¡Tu aporte ayuda a mantener este proyecto vivo y mejorarlo constantemente!
+
+### ☕ Opciones para donar:
+
+- [Buy Me a Coffee](https://coff.ee/drharry65)
+- [Ko-fi](https://ko-fi.com/drharry65)
+- Transferencia local (Chile):  
+  **Banco:** Banco Estado  
+  **Cuenta Rut:** 10396742  
+  **Nombre:** Alejandro Esteban Rodriguez Martin  
+  **Correo:** alejometro65@gmail.com
+
+Gracias por tu apoyo 🙌
+
+
 ## Instalación
 ```bash
 git clone https://github.com/tuusuario/trading-algoritmico.git
